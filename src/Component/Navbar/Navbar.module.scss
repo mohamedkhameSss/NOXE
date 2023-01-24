@@ -1,0 +1,10 @@
+@import '../../index.scss';
+
+.bgNavbar 
+{
+    background-color: $lightBgColor;
+}
+.bgNavbar a {
+    color: $fontColor !important;
+
+}
