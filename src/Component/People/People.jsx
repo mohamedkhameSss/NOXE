@@ -7,8 +7,8 @@ const People = () => {
   const { trendingPerson, setpage } = useContext(MediaContext);
 
   useEffect(() => {
+    document.title = "People";
     return () => {
-      document.title = "Movies";
       setpage(1);
     };
   }, []);
@@ -55,6 +55,7 @@ const People = () => {
               </Link>
             </div>
           ))}
+
         <div>
           <PaginationOutlined />
         </div>

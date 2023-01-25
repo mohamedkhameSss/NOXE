@@ -9,8 +9,8 @@ const TvShows = () => {
   const { trendingTvs, setpage } = useContext(MediaContext);
 
   useEffect(() => {
+    document.title = "Tv Shows";
     return () => {
-      document.title = "Tv Shows";
       setpage(1);
     };
   }, []);
@@ -59,10 +59,13 @@ const TvShows = () => {
             </Link>
           </div>
         ))}
-
-        <div>
-          <PaginationOutlined />
-        </div>
+        {window.location.hash == "#/tvShows" ? (
+          <div>
+            <PaginationOutlined />
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </>
   );

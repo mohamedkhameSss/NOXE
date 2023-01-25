@@ -7,8 +7,8 @@ const Movies = () => {
   const { trendingMovies, setpage } = useContext(MediaContext);
 
   useEffect(() => {
+    document.title = "Movies";
     return () => {
-      document.title = "Movies";
       setpage(1);
     };
   }, []);
@@ -60,10 +60,13 @@ const Movies = () => {
               </Link>
             </div>
           ))}
-
-          <div>
-            <PaginationOutlined />
-          </div>
+          {window.location.hash == "#/movies" ? (
+            <div>
+              <PaginationOutlined />
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       ) : (
         <div className='vh-100 d-flex align-items-center justify-content-center '>
