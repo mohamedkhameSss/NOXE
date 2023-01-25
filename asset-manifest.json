@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NOXE/static/css/main.3bd224d1.css",
-    "main.js": "/NOXE/static/js/main.214a9073.js",
+    "main.js": "/NOXE/static/js/main.ab9f4a3c.js",
     "static/js/787.c8163530.chunk.js": "/NOXE/static/js/787.c8163530.chunk.js",
     "static/media/fa-solid-900.ttf": "/NOXE/static/media/fa-solid-900.b1a653db79258eeccc5d.ttf",
     "static/media/fa-brands-400.ttf": "/NOXE/static/media/fa-brands-400.450a5c898f0b184b968b.ttf",
@@ -13,11 +13,11 @@
     "static/media/fa-v4compatibility.woff2": "/NOXE/static/media/fa-v4compatibility.4ee7f902d88f819e251c.woff2",
     "index.html": "/NOXE/index.html",
     "main.3bd224d1.css.map": "/NOXE/static/css/main.3bd224d1.css.map",
-    "main.214a9073.js.map": "/NOXE/static/js/main.214a9073.js.map",
+    "main.ab9f4a3c.js.map": "/NOXE/static/js/main.ab9f4a3c.js.map",
     "787.c8163530.chunk.js.map": "/NOXE/static/js/787.c8163530.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3bd224d1.css",
-    "static/js/main.214a9073.js"
+    "static/js/main.ab9f4a3c.js"
   ]
 }
