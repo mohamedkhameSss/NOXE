@@ -94,9 +94,9 @@ const Navbar = ({ userData, logout }) => {
 
             <ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
               <div className={detailsNavDisplay}>
-                <Search />
+                {userData ? <Search /> : ""}
               </div>
-              <div className='d-flex align-items-center mt-1'>
+              <div className='d-flex align-items-center mt-2'>
                 <a href='https://www.facebook.com/'>
                   <i className='fab fa-facebook mx-2'></i>
                 </a>
