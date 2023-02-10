@@ -31,11 +31,7 @@ const App = () => {
       children: [
         {
           index: true,
-          element: (
-            <ProtectedRoute>
-              <Home />
-            </ProtectedRoute>
-          ),
+          element: <Home />,
         },
         {
           path: "detailes/:id/:mediaType",

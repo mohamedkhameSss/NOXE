@@ -1,5 +1,5 @@
 import axios from "axios";
-import { createContext, useEffect, useState } from "react";
+import React, { createContext, useEffect, useMemo, useState } from "react";
 
 export let MediaContext = createContext(null);
 const MediaContextProvider = (props) => {
@@ -43,12 +43,13 @@ const MediaContextProvider = (props) => {
     );
     callback(data.results);
   };
-
   useEffect(() => {
     getTrendingItems("movie", setTrendingMovies);
     getTrendingItems("tv", setTrendingTvs);
     getTrendingItems("person", setTrendingPerson);
   }, [page]);
+
+  // useEffect(() => , []);
 
   return (
     <MediaContext.Provider
