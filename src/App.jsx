@@ -1,9 +1,4 @@
-import {
-  createBrowserRouter,
-  createHashRouter,
-  Navigate,
-  RouterProvider,
-} from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import { Offline, Online } from "react-detect-offline";
 import MasterLayout from "./Component/MasterLayout/MasterLayout";

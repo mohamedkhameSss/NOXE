@@ -97,17 +97,19 @@ const Navbar = ({ userData, logout }) => {
                 {userData ? <Search /> : ""}
               </div>
               <div className='d-flex align-items-center mt-2'>
-                <a href='https://www.facebook.com/'>
-                  <i className='fab fa-facebook mx-2'></i>
+                <a
+                  rel='noreferrer'
+                  target='_blank'
+                  href='https://github.com/mohamedkhameSss'
+                >
+                  <i className='fab fa-github mx-2'></i>
                 </a>
-                <a href='https://www.spotify.com/'>
-                  <i className='fab fa-spotify mx-2'></i>
-                </a>
-                <a href='https://www.instagram.com/'>
-                  <i className='fab fa-instagram mx-2'></i>
-                </a>
-                <a href='https://www.youtube.com/'>
-                  <i className='fab fa-youtube mx-2'></i>
+                <a
+                  rel='noreferrer'
+                  target='_blank'
+                  href='https://linkedin.com/in/mohamed-khamess-645637131'
+                >
+                  <i className='fab fa-linkedin mx-2'></i>
                 </a>
               </div>
               {userData ? (
