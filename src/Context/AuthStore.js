@@ -4,7 +4,7 @@ import { Navigate } from "react-router-dom";
 
 export let AuthContext = createContext(null);
 const AuthContextProvider = (props) => {
-  const [userData, setUserData] = useState(null);
+  const [userData, setUserData] = useState(true);
   let saveUserData = () => {
     let encodedToken = localStorage.getItem("token");
     let decodedToken = jwtDecode(encodedToken);
