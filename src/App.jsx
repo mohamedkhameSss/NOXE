@@ -33,45 +33,45 @@ const App = () => {
         {
           path: "detailes/:id/:mediaType",
           element: (
-            <ProtectedRoute>
+            // <ProtectedRoute>
               <Detailes />
-          </ProtectedRoute>
+          // </ProtectedRoute>
           ),
         },
         {
           path: "login",
           element: <Login saveUserData={saveUserData} />,
         },
-        {
-          path: "detailes/:id/:mediaType/login",
-          element: <Login saveUserData={saveUserData} />,
-        },
-        {
-          path: "tvShows/login",
-          element: <Login saveUserData={saveUserData} />,
-        },
-        {
-          path: "people/login",
-          element: <Login saveUserData={saveUserData} />,
-        },
-        {
-          path: "movies/login",
-          element: <Login saveUserData={saveUserData} />,
-        },
+        // {
+        //   path: "detailes/:id/:mediaType/login",
+        //   element: <Login saveUserData={saveUserData} />,
+        // },
+        // {
+        //   path: "tvShows/login",
+        //   element: <Login saveUserData={saveUserData} />,
+        // },
+        // {
+        //   path: "people/login",
+        //   element: <Login saveUserData={saveUserData} />,
+        // },
+        // {
+        //   path: "movies/login",
+        //   element: <Login saveUserData={saveUserData} />,
+        // },
         {
           path: "movies",
           element: (
-            <ProtectedRoute> 
+            // <ProtectedRoute> 
               <Movies />
-            </ProtectedRoute>
+            // </ProtectedRoute>
           ),
         },
         {
           path: "people",
           element: (
-            <ProtectedRoute>
+            // <ProtectedRoute>
               <People />
-          </ProtectedRoute>
+          // </ProtectedRoute>
           ),
         },
         {
@@ -81,17 +81,17 @@ const App = () => {
         {
           path: "tvShows",
           element: (
-            <ProtectedRoute> 
+            // <ProtectedRoute> 
               <TvShows />
-          </ProtectedRoute>
+          // </ProtectedRoute>
           ),
         },
         {
           path: "searchView",
           element: (
-            <ProtectedRoute>
+            // <ProtectedRoute>
               <SearchView />
-           </ProtectedRoute>
+          //  </ProtectedRoute>
           ),
         },
       ],

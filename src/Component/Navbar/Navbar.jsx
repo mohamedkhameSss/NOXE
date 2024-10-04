@@ -114,9 +114,9 @@ const Navbar = ({ userData, logout }) => {
               </div>
               {userData ? (
                 <li className='nav-item'>
-                  <Link className='nav-link mt-2' onClick={logout}>
+                  {/* <Link className='nav-link mt-2' onClick={logout}>
                     Logout
-                  </Link>
+                  </Link> */}
                 </li>
               ) : (
                 <>
