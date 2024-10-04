@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { MediaContext } from "../../Context/MediaStore";
 
 const Detailes = () => {
@@ -80,9 +80,12 @@ const Detailes = () => {
             <p className='my-2  text-info'>{detailsData.place_of_birth}</p>
           )}
           <p className='text-muted'>
-            {detailsData.overview}
+            
             {detailsData.biography}
           </p>
+            {detailsData?.homepage ? <a target="_blank"  href={detailsData.homepage}> {detailsData.title} {detailsData.name}</a>:''}
+            {console.log(detailsData)
+            }
         </div>
       </div>
     </>
