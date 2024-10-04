@@ -22,7 +22,7 @@ const App = () => {
     {
       path: "/",
       element: <MasterLayout
-{/*                  userData={userData} */}
+                 userData={userData}
                  logout={logout} />,
       errorElement: <Notfound />,
       children: [
@@ -33,45 +33,45 @@ const App = () => {
         {
           path: "detailes/:id/:mediaType",
           element: (
-            // <ProtectedRoute>
+            <ProtectedRoute>
               <Detailes />
-            // </ProtectedRoute>
+          </ProtectedRoute>
           ),
         },
-        // {
-        //   path: "login",
-        //   element: <Login saveUserData={saveUserData} />,
-        // },
-        // {
-        //   path: "detailes/:id/:mediaType/login",
-        //   element: <Login saveUserData={saveUserData} />,
-        // },
-        // {
-        //   path: "tvShows/login",
-        //   element: <Login saveUserData={saveUserData} />,
-        // },
-        // {
-        //   path: "people/login",
-        //   element: <Login saveUserData={saveUserData} />,
-        // },
-        // {
-        //   path: "movies/login",
-        //   element: <Login saveUserData={saveUserData} />,
-        // },
+        {
+          path: "login",
+          element: <Login saveUserData={saveUserData} />,
+        },
+        {
+          path: "detailes/:id/:mediaType/login",
+          element: <Login saveUserData={saveUserData} />,
+        },
+        {
+          path: "tvShows/login",
+          element: <Login saveUserData={saveUserData} />,
+        },
+        {
+          path: "people/login",
+          element: <Login saveUserData={saveUserData} />,
+        },
+        {
+          path: "movies/login",
+          element: <Login saveUserData={saveUserData} />,
+        },
         {
           path: "movies",
           element: (
-            // <ProtectedRoute> 
+            <ProtectedRoute> 
               <Movies />
-{/*             </ProtectedRoute> */}
+            </ProtectedRoute>
           ),
         },
         {
           path: "people",
           element: (
-            // <ProtectedRoute>
+            <ProtectedRoute>
               <People />
-            // </ProtectedRoute>
+          </ProtectedRoute>
           ),
         },
         {
@@ -81,17 +81,17 @@ const App = () => {
         {
           path: "tvShows",
           element: (
-            // <ProtectedRoute> 
+            <ProtectedRoute> 
               <TvShows />
-            // </ProtectedRoute>
+          </ProtectedRoute>
           ),
         },
         {
           path: "searchView",
           element: (
-            // <ProtectedRoute>
+            <ProtectedRoute>
               <SearchView />
-            // </ProtectedRoute>
+           </ProtectedRoute>
           ),
         },
       ],
@@ -100,12 +100,7 @@ const App = () => {
   return (
     <>
       <div>
-{/*         <Online> */}
           <RouterProvider router={routes} />
-{/*         </Online> */}
-{/*         <Offline> */}
-          // <h1 className='w-100 pt-5 mt-5 text-center'>You Are offline</h1>{" "}
-{/*         </Offline> */}
       </div>
     </>
   );
